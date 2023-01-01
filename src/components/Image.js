@@ -1,8 +1,8 @@
 import { useRef, useState, useEffect } from "react";
 import * as React from "react";
-import PLACE_HOLDER from "assets/images/placeholder.jpg";
+import PLACE_HOLDER from "assets/images/no-image.jpg";
 
-export default Image = ({ src, width, height }) => {
+export const LazyImage = ({ src, width, height }) => {
   const imgRef = useRef(null);
   const [isLoad, setIsLoad] = useState(false);
 
@@ -49,3 +49,6 @@ function onIntersection(entries, io) {
     }
   });
 }
+
+
+export default LazyImage;
