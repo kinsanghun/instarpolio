@@ -1,16 +1,16 @@
-import { Container } from "./container"
-
+import { NavContext } from "App";
+import { useContext } from "react";
+import {IoIosInformationCircle, IoIosSend} from "react-icons/io";
 export const Header = () => {
-    const title = "Kim sang hun";
+    const context = useContext(NavContext);
+    const title = "Frontolio";
     return (
         <header>
                 <div className="container header">
-                <h1>{title}</h1>
+                <h1  onClick={()=>{context.setNavigate("/")}}>{title}</h1>
                 <ul>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
-                    <li>Home</li>
+                    <li onClick={()=>{context.setNavigate("/direct")}}><IoIosSend/></li>
+                    <li onClick={()=>{context.setNavigate("/mypage")}}><IoIosInformationCircle/></li>
                 </ul>
                 </div>
         </header>

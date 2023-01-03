@@ -1,15 +1,15 @@
 import { Post } from "components/post";
-import { SubWrapper } from "components/subWrapper";
-import { Wrapper } from "components/wrapper"
-
+import { Wrapper } from "components/wrapper";
+import Project from 'assets/json/project';
 
 const Main = () => {
+    const projects = Project.project.map(pj =>  <Post post={pj}/>);
     return (
         <div className="main">
             <Wrapper>
-                <Post />
+                {projects}
             </Wrapper>
-            <SubWrapper/>
+            {/* <SubWrapper/> */}
         </div>
     )
 }

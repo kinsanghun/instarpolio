@@ -1,0 +1,17 @@
+{
+    "project" : [
+        {
+            "id" : 1000,
+            "name" : "Icentric Dashboard",
+            "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
+            "description" : "Lorem Ipsum",
+            "images" : [
+                "assets/images/project/icentric1.png",
+                "assets/images/project/icentric2.png",
+                "assets/images/project/icentric3.png",
+                "assets/images/project/icentric4.png",
+                "assets/images/project/icentric5.png"
+            ]
+        }
+    ]
+}

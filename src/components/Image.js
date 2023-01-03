@@ -29,6 +29,7 @@ export const LazyImage = ({ src, width, height }) => {
 
   return (
     <img
+    style={{objectFit:"cover"}}
       ref={imgRef}
       src={isLoad ? src : PLACE_HOLDER}
       width={width}

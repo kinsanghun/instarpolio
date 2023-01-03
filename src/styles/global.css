@@ -21,7 +21,7 @@ header h1 {
 .container {
     position : relative;
     max-width: var(--max-width);
-    padding : var(--default-padding);
+    padding : 0 var(--default-padding);
     margin : 0 auto;
 }
 .container.header {
@@ -35,53 +35,148 @@ header h1 {
 }
 .container.header ul {
     display: flex;
-    justify-content: space-around;
-    width : 50%;
+    gap : 20px;
+    padding : 0;
+    margin : 0;
 }
 
 .container.header ul li {
     list-style: none;
+    font-size : 22px;
+    padding : 0;
+    margin : 0;
+}
+.container.header ul li svg {
+    margin : 0;
+    padding : 0;
 }
 .wrapper {
     position : relative;
     width : 100%;
-    padding : 50px;
+    padding : 25px 0;
 }
 .flex {
     display: flex;
-}
-.post .header-box {
-    position : relative;
-    width : 100%;
-    height : 50px;
-}
-.post .image-box {
-    position : relative;
-    width : 100%;
-    object-fit: cover;
-}
-.post .content-box {
-    position : relative;
-    width : 100%;
-    height : 120px;
-}
-
-.main {
-    position: relative;
-    width : 100%;
-    display: flex;
-}
-.main > .wrapper:first-child {
-    position: relative;
-    width : 70%;
-}
-.main > .wrapper:last-child {
-    position: relative;
-    width : 30%;
+    align-items: center;
+    gap : 20px;
 }
 .post {
     position: relative;
     margin : 0 auto;
     width : 100%;
-    border : 0.5px solid rgba(128, 128, 128, 0.514);
+    border : 0.5px solid rgba(1, 1, 1, 0.563);
+}
+
+.post .header-box {
+    position : relative;
+    width : 100%;
+    height : 50px;
+    
+    display: flex;
+    padding : 5px 10px;
+    align-items: center;
+}
+.post .header-box .profile {
+    border-radius: 50%;
+    width : 30px;
+    height : 30px;
+    overflow: hidden;
+}
+.post .header-box .profile-name {
+    font-size : 14px;
+    font-weight: 400;
+    margin-left : 10px;
+    color : rgb(29, 29, 29);
+}
+.post .image-box {
+    position : relative;
+    width : 100%;
+    overflow: hidden;
+}
+.post .image-box .images{
+    display: flex;
+}
+.post .content-box {
+    position : relative;
+    width : 100%;
+    padding : 20px;
+    display: flex;
+    font-size : 14px;
+    flex-direction: column;
+    gap : 6px;
+    box-sizing: border-box;
+}
+.post .content-box .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap : 10px;
+}
+.post .content-box .skills .skill{
+    padding : 0.25em 0.5em;
+    font-size : 12px;
+    background: rgba(177, 162, 255, 0.489);
+    border-radius: 15px;
+}
+.main {
+    position: relative;
+    width : 100%;
+    display: flex;
+    flex-direction: column;
+}
+.main > .wrapper.main {
+    position: relative;
+    width : 100%;
+}
+.main > .wrapper.sub {
+    position: relative;
+    width : 30%;
+}
+
+.main .wrapper {
+    gap : 30px;
+    max-width : 800px;
+}
+.mypage .profile {
+    border-radius: 50%;
+    overflow: hidden;
+}
+.mypage .info {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+.mypage .info h2 {
+    font-size : 20px;
+    font-weight : 600;
+    color : rgb(26, 26, 26);
+}
+.mypage .info h3 {
+    font-size: 14px;
+    font-weight : 400;
+    color : rgb(66, 66, 66);
+}
+.mypage .skills {
+    width : 100%;
+    margin-top : 10px;
+    display: flex;
+    gap : 10px;
+    flex-wrap: wrap;
+}
+.mypage .skills .skill {
+    padding : 5px 15px;
+    background: rgb(197, 194, 243);
+    border-radius: 15px;
+}
+.mypage .projects {
+    width : 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.mypage .projects .project {
+    position : relative;
+    width : 100%;
+    background: gray;
+    border : 0.5px solid rgba(189, 184, 184, 0.526);
+    box-sizing: border-box;
 }
