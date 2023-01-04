@@ -6,7 +6,7 @@ import Project from 'assets/json/project';
 
 const MyPage = () => {
     const skills = Skill.skill.map(s => <div key={s.id} className="skill">{s.name}</div>);
-    const projects = Project.project.map(pj =>  <div className="project"><LazyImage src={pj.images[0]} width="100%" height="100%"/></div>);
+    const projects = Project.project.map(pj =>  <div className="project" key={pj.id}><LazyImage src={pj.images[0]} width="100%" height="100%"/></div>);
     return (
         <div className="mypage">
             <Wrapper>

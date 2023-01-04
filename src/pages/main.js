@@ -3,7 +3,7 @@ import { Wrapper } from "components/wrapper";
 import Project from 'assets/json/project';
 
 const Main = () => {
-    const projects = Project.project.map(pj =>  <Post post={pj}/>);
+    const projects = Project.project.map(pj =>  <Post key={pj.id} post={pj}/>);
     return (
         <div className="main">
             <Wrapper>

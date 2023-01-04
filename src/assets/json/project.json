@@ -4,7 +4,31 @@
             "id" : 1000,
             "name" : "Icentric Dashboard",
             "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
-            "description" : "Lorem Ipsum",
+            "description" : "Autodesk Open API를 활용한 Data 구현",
+            "images" : [
+                "assets/images/project/icentric1.png",
+                "assets/images/project/icentric2.png",
+                "assets/images/project/icentric3.png",
+                "assets/images/project/icentric4.png",
+                "assets/images/project/icentric5.png"
+            ]
+        },{
+            "id" : 1001,
+            "name" : "Icentric Dashboard",
+            "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
+            "description" : "Autodesk Open API를 활용한 Data 구현",
+            "images" : [
+                "assets/images/project/icentric1.png",
+                "assets/images/project/icentric2.png",
+                "assets/images/project/icentric3.png",
+                "assets/images/project/icentric4.png",
+                "assets/images/project/icentric5.png"
+            ]
+        },{
+            "id" : 1002,
+            "name" : "Icentric Dashboard",
+            "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
+            "description" : "Autodesk Open API를 활용한 Data 구현",
             "images" : [
                 "assets/images/project/icentric1.png",
                 "assets/images/project/icentric2.png",
