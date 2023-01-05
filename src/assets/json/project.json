@@ -3,8 +3,10 @@
         {
             "id" : 1001,
             "name" : "povelo 개발자 포트폴리오 페이지 구현",
-            "skill" : ["React.js", "tailwind"],
-            "description" : "portfolio developer의 약자로 개발자의 포트폴리오를 위한 공간을 만들고자 했습니다.\n\n[기능]\njwt token 방식을 이용한 로그인\n",
+            "skill" : ["React.js", "tailwind", "pm2", "aws", "Github", "postman", "Jira"],
+            "link" : "https://povelo.ksrpn.com",
+            "git" : "https://github.com/IGCD/povelo-site",
+            "description" : "portfolio developer의 약자로 개발자의 포트폴리오를 위한 공간을 만들고자 했습니다.\n\n[기능]\njwt 토큰과 cookie를 이용한 로그인, httpOnly, Secure 옵션을 이용해\nImageCDN, Lazy를 이용한 이미지최적화\n",
             "images" : [
                 "assets/images/project/povelo.png",
                 "assets/images/project/povelo2.png",
@@ -14,13 +16,41 @@
             "id" : 1000,
             "name" : "Icentric 내부 관리페이지 Dashboard 구현",
             "skill" : ["Next.js", "SCSS", "Material", "Chart.js"],
-            "description" : "Autodesk Open API를 활용한 Data 구현",
+            "link" : "",
+            "git" : "",
+            "description" : "Autodesk Open API를 활용한 Data 처리 구현\n\n각 그래프 조건별 데이터 변경기능 구현\nChart.js를 이용한 그래프 생성\nMaterial React Table을 이용한 데이터 테이블 생성 및 Export CSV 기능 구현\n테이블 내 데이터 클릭 시 Quotation 자동 생성\n",
             "images" : [
                 "assets/images/project/icentric1.png",
                 "assets/images/project/icentric2.png",
                 "assets/images/project/icentric3.png",
                 "assets/images/project/icentric4.png",
                 "assets/images/project/icentric5.png"
+            ]
+        },{
+            "id" : 1003,
+            "name" : "[Career] 재능아지트 외주활동",
+            "skill" : ["Python", "React.js", "JS", "Django" ,"Express"],
+            "link" : "",
+            "git" : "",
+            "description" : "재능아지트에서 들어오는 의뢰를 해결하며 경험을 쌓았습니다. 외주활동을 하며 책임감과 실무에서 얻을 수 있는 개발능력을 기를 수 있었습니다.\n\n각종 프로젝트 단위 작업\n각종 보안관련 알고리즘 구현\napi 및 module 구현",
+            "images" : [
+                "assets/images/project/skill0.png",
+                "assets/images/project/skill1.png",
+                "assets/images/project/skill2.png",
+                "assets/images/project/skill3.png"
+            ]
+        },{
+            "id" : 1004,
+            "name" : "쿠우쿠우 송천점 관리시스템",
+            "skill" : ["Django","JS", "Ajax", "MySQL"],
+            "link" : "",
+            "git" : "",
+            "description" : "쿠우쿠우 송천점의 관리시스템을 구축\n\n",
+            "images" : [
+                "assets/images/project/qooqoo.png",
+                "assets/images/project/qooqoo0.png",
+                "assets/images/project/qooqoo1.png",
+                "assets/images/project/qooqoo1_1.png"
             ]
         }
     ]

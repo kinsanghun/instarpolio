@@ -33,6 +33,8 @@ export const Post = ({post}) => {
             <div className="content-box">
                 <h3>{post.name}</h3>
                 <div className="skills">{post.skill.map((skill, index) => <div key={index} className="skill">{skill}</div>)}</div>
+                {post.link.length > 0 ? <div>link : <a style={{display:"inline-block", color:"#5555ff"}} href={post.link}>{post.link}</a></div> : <></>}
+                {post.git.length > 0 ? <div>Github : <a style={{display:"inline-block", color:"#5555ff"}} href={post.git}>{post.git}</a></div> : <></>}
                 <pre className="description">{post.description}</pre>
             </div>
         </div>

@@ -2,7 +2,7 @@ import { Container } from 'components/container';
 import { Header } from 'components/header';
 import Main from 'pages/main';
 import MyPage from 'pages/mypage';
-import { createContext, useState } from 'react';
+import { createContext, useEffect, useState } from 'react';
 import 'styles/global.css';
 
 export const NavContext = createContext({
