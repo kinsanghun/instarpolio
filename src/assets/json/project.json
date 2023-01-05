@@ -1,33 +1,19 @@
 {
     "project" : [
         {
-            "id" : 1000,
-            "name" : "Icentric Dashboard",
-            "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
-            "description" : "Autodesk Open API를 활용한 Data 구현",
-            "images" : [
-                "assets/images/project/icentric1.png",
-                "assets/images/project/icentric2.png",
-                "assets/images/project/icentric3.png",
-                "assets/images/project/icentric4.png",
-                "assets/images/project/icentric5.png"
-            ]
-        },{
             "id" : 1001,
-            "name" : "Icentric Dashboard",
-            "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
-            "description" : "Autodesk Open API를 활용한 Data 구현",
+            "name" : "povelo 개발자 포트폴리오 페이지 구현",
+            "skill" : ["React.js", "tailwind"],
+            "description" : "portfolio developer의 약자로 개발자의 포트폴리오를 위한 공간을 만들고자 했습니다.\n\n[기능]\njwt token 방식을 이용한 로그인\n",
             "images" : [
-                "assets/images/project/icentric1.png",
-                "assets/images/project/icentric2.png",
-                "assets/images/project/icentric3.png",
-                "assets/images/project/icentric4.png",
-                "assets/images/project/icentric5.png"
+                "assets/images/project/povelo.png",
+                "assets/images/project/povelo2.png",
+                "assets/images/project/povelo3.png"
             ]
         },{
-            "id" : 1002,
-            "name" : "Icentric Dashboard",
-            "skill" : ["React.js", "SCSS", "Material", "Chart.js"],
+            "id" : 1000,
+            "name" : "Icentric 내부 관리페이지 Dashboard 구현",
+            "skill" : ["Next.js", "SCSS", "Material", "Chart.js"],
             "description" : "Autodesk Open API를 활용한 Data 구현",
             "images" : [
                 "assets/images/project/icentric1.png",

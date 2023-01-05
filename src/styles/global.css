@@ -18,6 +18,7 @@ header {
     width : 100%;
     height : 50px;
     display: flex;
+    padding : 0 var(--default-padding);
     justify-content: space-between;
     align-items: center;
     border-bottom : 0.5px solid rgba(0, 0, 0, 0.2);
@@ -28,9 +29,10 @@ header h1 {
 .container {
     position : relative;
     max-width: var(--max-width);
-    padding : 0 var(--default-padding);
-    margin : 0 auto;
+    padding : 0;
+    margin : 0 auto;  
 }
+
 .container.header {
     position : relative;
     width : var(--max-width);
@@ -57,11 +59,13 @@ header h1 {
     margin : 0;
     padding : 0;
 }
+
 .wrapper {
     position : relative;
     width : 100%;
     padding : 25px 0;
 }
+
 .flex {
     display: flex;
     align-items: center;
@@ -71,7 +75,7 @@ header h1 {
     position: relative;
     margin : 0 auto;
     width : 100%;
-    border : 0.5px solid rgba(1, 1, 1, 0.563);
+    /* border : 0.5px solid rgba(1, 1, 1, 0.163); */
 }
 
 .post .header-box {
@@ -102,17 +106,18 @@ header h1 {
 .post .image-box .arrow {
     position : absolute;
     top : 50%;
-    width : 40px;
-    height : 40px;
+    width : 32px;
+    height : 32px;
     display: flex;
     margin : 0 10px;
     justify-content: center;
     align-items: center;
-    font-size : 2rem;
+    font-size : 1.2rem;
     transform : translateY(-100%);
     z-index: 10;
     cursor: pointer;
-    background: rgba(0, 0, 0, 0.05);
+    color : white;
+    background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
 }
 
@@ -164,8 +169,11 @@ header h1 {
 }
 
 .main .wrapper {
-    gap : 30px;
+    padding : 0;
     max-width : 800px;
+}
+.mypage {
+    padding : 0 var(--default-padding);
 }
 .mypage .profile {
     border-radius: 50%;
@@ -211,4 +219,35 @@ header h1 {
     background: gray;
     border : 0.5px solid rgba(189, 184, 184, 0.526);
     box-sizing: border-box;
+}
+.mypage .mypage-modal {
+    position: fixed;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : 100vh;
+    background: white;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+.mypage .mypage-modal header {
+    position: relative;
+    max-width : 800px;
+    margin : 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.mypage .mypage-modal header .close-btn {
+    position : absolute;
+    left: 10px;
+    font-size : 1.5rem;
+}
+.mypage .mypage-modal header h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size : 1rem;
+}
+.mypage .mypage-modal .post {
+    max-width : 800px;
 }

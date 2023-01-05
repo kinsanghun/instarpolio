@@ -3,12 +3,26 @@ import { Wrapper } from "components/wrapper"
 import PROFILE from "assets/images/profile.jpeg";
 import Skill from 'assets/json/skill';
 import Project from 'assets/json/project';
+import { useState } from "react";
+import { MyPageModal } from "components/modal";
 
 const MyPage = () => {
+    const [modalView, setModalView] = useState(false);
+    const [modalData, setModalData] = useState({});
     const skills = Skill.skill.map(s => <div key={s.id} className="skill">{s.name}</div>);
-    const projects = Project.project.map(pj =>  <div className="project" key={pj.id}><LazyImage src={pj.images[0]} width="100%" height="100%"/></div>);
+
+    const modalHandler = (data) => {
+        setModalData(data);
+        setModalView(prev => true);
+    }
+
+    const projects = Project.project.map(pj =>  
+        <div className="project" key={pj.id} onClick={()=>{modalHandler(pj)}}>
+            <LazyImage src={pj.images[0]} width="100%" height="100%"/>
+        </div>);
     return (
         <div className="mypage">
+            {modalView ? <MyPageModal project={modalData} close={setModalView}/> : <></>}
             <Wrapper>
                 <div className="flex">
                     <div className="profile">
@@ -30,6 +44,7 @@ const MyPage = () => {
                 <div className="skills">{skills}</div>
             </Wrapper>
             <Wrapper>
+                <h3 style={{marginBottom:"1rem"}}>PROJECTS</h3>
                 <div className="projects">
                     {projects}
                 </div>
