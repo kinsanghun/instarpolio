@@ -10,7 +10,7 @@ export const NavContext = createContext({
   setNavigate : () => {}
 })
 function App() {
-  const [navigate, setNavigate] = useState("/mypage");
+  const [navigate, setNavigate] = useState("/");
 
   const routeTable = {
     "/" : <Main/>,
